@@ -16,6 +16,7 @@ int main(int argc, char* argv[])
 	cout << a << "\n";
 
 	cout << "Угадай число от 1 до 10" << "\n";
+	cout << "\n";
 	cout << "Введи число от 1 до 10" << "\n";
 	cin >> b;
 
