@@ -1,0 +1,66 @@
+//
+//  main.cpp
+//  HW2_1
+//
+//  Created by Умитхан Туржанов on 27.11.2021.
+//
+
+#include <iostream>
+using namespace std;
+int main(int argc, const char * argv[]) {
+    string last_name;
+    string name;
+    string phone_num;
+    int service;
+    string comment_1;
+    string comment_2;
+    string comment_3;
+    string iin;
+    
+    
+    
+    cout << "--Рады приветсвовать в нашей службе технической помощи!--" << endl;
+    cout << " "<< endl;
+    cout << "--Просим заполнить заполнить заявку на оказание услуг--" << endl;
+    cout << " " << endl;
+    cout << "Введите вашу фамиллию: ";
+    cin >> last_name;
+    cout << "Введите ваше имя: ";
+    cin >> name;
+    cout << "Введите ваш иин: ";
+    cin>> iin;
+    cout << "Контактный телефон: ";
+    cin >> phone_num;
+    cout << " " << endl;
+    cout << "Проверьте, правильно ли все указали?"<<endl;
+    cout << "Фамиллия: " << last_name << endl << "Имя: "<< name<<"ИИH: " << iin << endl <<"Номер телефона: "<< phone_num << endl;
+    cout << " " << endl;
+    cout << "Типы услуг:"<< endl;
+    cout << "1. Ремонт телефона" << endl << "2. Ремонт ноутбука" << endl << "3. Ремонт пк" << endl << "4. Операция на прямые руки" << endl;
+    cout << "Номер требуемой услуги: ";
+   
+    cin >> service;
+    switch (service) {
+        case 1:
+            cout << "Опишите пожалуйста детально ситуацию произошедшую с телефоном: ";
+            cin >> comment_1;
+            break;
+        case 2:
+            cout <<"Опишите пожалуйста детально ситуацию произошедшую с ноутбуком: ";
+            cin >> comment_2;
+            break;
+        case 3:
+            cout <<"Опишите пожалуйста детально ситуацию произошедшую с пк: ";
+            cin >> comment_3;
+            break;
+        case 4:
+            cout <<"Цена за операцию - 10000$ После операции гарантированное трудоустройство в нашем сервисе!";
+            break;
+        default:
+            cout << "Вы указали не верный тип"<< endl;
+            break;
+    }
+    cout << " " << endl;
+    cout << "Спасибо за заявку! Менеджер скоро с ваши свяжется!";
+    return 0;
+}
