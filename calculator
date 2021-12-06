@@ -1,0 +1,63 @@
+//
+//  main.cpp
+//  CW4
+//
+//  Created by Умитхан Туржанов on 06.12.2021.
+//
+
+#include <iostream>
+using namespace std;
+
+void sub(double a, double b){
+    cout << "a-b = "<< (a-b)<< endl;
+}
+void sum(double a, double b){
+    cout <<"a+b = "<<  (a+b)<< endl;
+}
+void del(double a, double b){
+    if (b!=0){
+    cout << "a/b = "<< float(a/b)<< endl;
+    }
+    else {
+        cout << "на 0 делить нельзя!";
+    }
+}
+void mul(double a, double b){
+    cout << "a*b = "<< (a*b)<< endl;
+}
+
+int main(int argc, const char * argv[]) {
+   
+    int num;
+    int num2;
+    cin >> num;
+    num2 = 2 * num;
+    number(num2);
+    return 0;*/
+    double num_1;
+    double num_2;
+    char op;
+    cout << "Введите первое число: " << endl;
+    cin >> num_1;
+    cout << "Введите второе число: " << endl;
+    cin >> num_2;
+    cout << "Какое дейстсие желаете выполнить? (+, -, /, *) "<< endl;
+    cin >> op;
+
+    
+    if (op == '-'){
+        sub(num_1, num_2);
+    }
+    else if (op == '+'){
+        sum(num_1, num_2);
+    }
+    else if (op == '/'){
+        del(num_1, num_2);
+    }
+    else if (op == '*'){
+        mul(num_1, num_2);
+    }
+    else {
+        cout << "такого оператора нет ";
+    }
+}
