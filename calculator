@@ -41,7 +41,7 @@ int main(int argc, const char * argv[]) {
     cin >> num_1;
     cout << "Введите второе число: " << endl;
     cin >> num_2;
-    cout << "Какое дейстсие желаете выполнить? (+, -, /, *) "<< endl;
+    cout << "Какое действие желаете выполнить? (+, -, /, *) "<< endl;
     cin >> op;
 
     
