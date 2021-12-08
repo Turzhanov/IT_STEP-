@@ -9,9 +9,11 @@
 using namespace std;
 // фунция 1 отдела с проверкой пароля
 int Back_end(string password){
+    // создаем переменную которая содержит пароль
     string codeword_1 = "1";
     cout << "Введите кодовое слово:  ";
     cin >> password;
+    //сравниваем переменную содержащая пароль с переменной в которую написал пароль пользователь
     if (password == codeword_1){
         cout << "WELCOME!!!"<< "\n";
     }
@@ -22,9 +24,11 @@ int Back_end(string password){
 }
 // фунция 2 отдела с проверкой пароля
 int Fron_end(string password){
+    // создаем переменную которая содержит пароль
     string codeword_1 = "2";
     cout << "Введите кодовое слово:  ";
     cin >> password;
+    //сравниваем переменную содержащая пароль с переменной в которую написал пароль пользователь
     if (password == codeword_1){
         cout << "WELCOME!!!"<< "\n";
     }
@@ -35,9 +39,11 @@ int Fron_end(string password){
 }
 // фунция 3 отдела с проверкой пароля
 int Mobile(string password){
+    // создаем переменную которая содержит пароль
     string codeword_1 = "3";
     cout << "Введите кодовое слово:  " ;
     cin >> password;
+    //сравниваем переменную содержащая пароль с переменной в которую написал пароль пользователь
     if (password == codeword_1){
         cout << "WELCOME!!!"<< "\n";
     }
@@ -48,9 +54,11 @@ int Mobile(string password){
 }
 // фунция 4 отдела с проверкой пароля
 int HR(string password){
+    // создаем переменную которая содержит пароль
     string codeword_1 = "4";
     cout << "Введите кодовое слово: ";
     cin >> password;
+    //сравниваем переменную содержащая пароль с переменной в которую написал пароль пользователь
     if (password == codeword_1){
         cout << "WELCOME!!!"<< "\n";
     }
@@ -67,18 +75,22 @@ int Answer(char answer) {
     cin >> answer;
     if (answer == '1'){
         cout << "Отдел Back_end"<<"\n";
+        //вызов функции
         Back_end(password);
     }
         else if (answer == '2'){
             cout << "Отдел Front_end " << "\n";
+            //вызов функции
             Fron_end(password);
         }
         else if (answer == '3'){
             cout << "Отдел MobileDev " << "\n";
+            //вызов функции
             Mobile(password);
         }
         else if (answer == '4'){
             cout << "Отдел HR " << "\n";
+            //вызов функции
             HR(password);
         }
         else {
